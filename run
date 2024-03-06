@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+python3 Model_genration.py >&1 | tee Model_training_logs.log
+python3 validate.py >&1 | tee Model_validation_logs.log
+python3 app.py
